@@ -25,7 +25,7 @@ const AppBanner = () => {
 					}}
 					className="font-general-semibold text-2xl lg:text-3xl xl:text-4xl text-center sm:text-left text-ternary-dark dark:text-primary-light uppercase"
 				>
-					Hi, Iam Stoman
+					Hi, I am Rohit
 				</motion.h1>
 				<motion.p
 					initial={{ opacity: 0 }}
@@ -37,7 +37,19 @@ const AppBanner = () => {
 					}}
 					className="font-general-medium mt-4 text-lg md:text-xl lg:text-2xl xl:text-3xl text-center sm:text-left leading-normal text-gray-500 dark:text-gray-200"
 				>
-					A Full-Stack Developer & Design Enthusiast
+					I build things that scale
+				</motion.p>
+				<motion.p
+					initial={{ opacity: 0 }}
+					animate={{ opacity: 1 }}
+					transition={{
+						ease: 'easeInOut',
+						duration: 0.9,
+						delay: 0.2,
+					}}
+					className="font-general-medium mt-4 text-md md:text-lg lg:text-xl xl:text-2xl text-center sm:text-left leading-normal text-gray-500 dark:text-gray-200"
+				>
+					CS graduate student at UC Irvine and an enthusiastic Software Developer. I like working on Distributed Systems and Microservices
 				</motion.p>
 				<motion.div
 					initial={{ opacity: 0 }}

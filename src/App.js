@@ -17,22 +17,22 @@ const ProjectSingle = lazy(() => import('./pages/ProjectSingle.jsx'));
 function App() {
 	return (
 		<AnimatePresence>
-			<div className=" bg-secondary-light dark:bg-primary-dark transition duration-300">
+			<div className="bg-secondary-light dark:bg-primary-dark transition duration-300">
 				<Router>
 					<ScrollToTop />
 					<AppHeader />
 					<Suspense fallback={""}>
-						<Routes>
+						<Home />
+						<About />
+						<Projects />
+						<Contact />
+						{/* <Routes>
 							<Route path="/" element={<Home />} />
 							<Route path="projects" element={<Projects />} />
-							<Route
-								path="projects/single-project"
-								element={<ProjectSingle />}
-							/>
-
+							<Route path="projects/single-project" element={<ProjectSingle />}/>
 							<Route path="about" element={<About />} />
 							<Route path="contact" element={<Contact />} />
-						</Routes>
+						</Routes> */}
 					</Suspense>
 					<AppFooter />
 				</Router>

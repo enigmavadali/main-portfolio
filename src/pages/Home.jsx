@@ -7,9 +7,9 @@ import Button from '../components/reusable/Button';
 const Home = () => {
 	return (
 		<div className="container mx-auto">
-			<AppBanner></AppBanner>
+			<AppBanner/>
 
-			<ProjectsProvider>
+			{/* <ProjectsProvider>
 				<ProjectsGrid></ProjectsGrid>
 			</ProjectsProvider>
 
@@ -21,7 +21,7 @@ const Home = () => {
 				>
 					<Button title="More Projects" />
 				</Link>
-			</div>
+			</div> */}
 		</div>
 	);
 };

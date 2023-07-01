@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { FiMenu, FiMoon, FiSun, FiX } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import useThemeSwitcher from '../../hooks/useThemeSwitcher';
@@ -34,6 +34,14 @@ const AppHeader = () => {
 			setShowModal(false);
 		}
 	}
+
+	const smoothScroll = (event) => {
+		event.preventDefault();
+		const projectsSection = document.getElementById('projects');
+		if (projectsSection) {
+			projectsSection.scrollIntoView({ behavior: 'smooth' });
+		}
+	};
 
 	return (
 		<motion.nav
@@ -162,6 +170,14 @@ const AppHeader = () => {
 					>
 						Contact
 					</Link>
+					<a
+						href="#projects"
+						className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
+						aria-label="Contact"
+						onClick={smoothScroll}
+					>
+						Test
+					</a>
 				</div>
 
 				{/* Header right section buttons */}

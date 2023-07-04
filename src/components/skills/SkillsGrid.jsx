@@ -7,11 +7,14 @@ const SkillsGrid = () => {
     const {skillsData, skillsHeading} = useContext(SkillsContext);
 
     return (
-        <section id='skills'>
+        <div id='skills'>
             <div className="mt-10 sm:mt-20">
                 <p className="font-general-medium text-2xl sm:text-3xl  text-center text-primary-dark dark:text-primary-light">
                     {skillsHeading}
                 </p>
+            </div>
+            <div className="text-right float-right mt-8 sm:mt-2">
+                <img width="350px" src={SkillProgrammer} alt="skill-programmer" />
             </div>
             <div className='grid grid-cols-4 sm:grid-cols-4 mt-8 sm:mt-8 gap-2 sm:gap-0'>
                 {skillsData.map( (skill) => (
@@ -22,11 +25,9 @@ const SkillsGrid = () => {
                     />
                 ))}
             </div>
-            {/* <div className="w-full sm:w-2/3 text-right float-right mt-8 sm:mt-2">
-                <img src={SkillProgrammer} alt="skill-programmer" />
-            </div> */}
             
-        </section>
+            
+        </div>
     );
 };
 

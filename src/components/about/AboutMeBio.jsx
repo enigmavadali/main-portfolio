@@ -7,8 +7,8 @@ const AboutMeBio = () => {
 
 	return (
 		<div id="aboutme">
-			<div className="mt-10 sm:mt-20">
-			<p className="font-general-medium text-2xl sm:text-3xl  text-center text-primary-dark dark:text-primary-light">
+			<div className="mt-10 sm:mt-20 text-center">
+			<p className="font-general-medium text-2xl sm:text-4xl mb-1 text-ternary-dark dark:text-ternary-light">
 				{aboutMeHeading}
 			</p>
 			</div>

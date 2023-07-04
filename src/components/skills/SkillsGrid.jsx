@@ -8,15 +8,15 @@ const SkillsGrid = () => {
 
     return (
         <div id='skills'>
-            <div className="mt-10 sm:mt-20">
-                <p className="font-general-medium text-2xl sm:text-3xl  text-center text-primary-dark dark:text-primary-light">
+            <div className="mt-10 sm:mt-20 text-center">
+                <p className="font-general-medium text-2xl sm:text-4xl mb-1 text-ternary-dark dark:text-ternary-light">
                     {skillsHeading}
                 </p>
             </div>
             <div className="text-right float-right mt-8 sm:mt-2">
                 <img width="350px" src={SkillProgrammer} alt="skill-programmer" />
             </div>
-            <div className='grid grid-cols-4 sm:grid-cols-4 mt-8 sm:mt-8 gap-2 sm:gap-0'>
+            <div className='grid grid-cols-4 sm:grid-cols-4 mt-10 sm:mt-10 gap-2 sm:gap-0'>
                 {skillsData.map( (skill) => (
                     <SkillSingle
                     title={skill.title}

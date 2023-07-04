@@ -1,10 +1,16 @@
+export const aboutMeHeading = "Well, where do we start...";
+
 export const aboutMeData = [
 	{
 		id: 1,
-		bio: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.',
+		bio: 'I\'m a graduate student pursuing my Masters in Computer Science at University of California, Irvine. A passionate software developer keen on learning & working on Distributed Systems and Microservices.',
 	},
 	{
 		id: 2,
-		bio: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?',
+		bio: 'In addition to my expertise in backend development, I\'m also venturing into the realm of frontend technologies. It\'s my way of claiming the coveted title of a Full-Stack Developer and making all the cool kids jealous. I enjoy designing systems and playing detective when it comes to pinpointing the sneaky culprits behind failures.',
+	},
+	{
+		id: 3,
+		bio: 'When I\'m not busy conquering the professional world, you\'ll find me indulging in cooking and learning to play the guitar. Badminton has always captivated me, and I\'ve recently embraced the exhilarating world of ultimate frisbee.',
 	},
 ];

@@ -37,9 +37,9 @@ const AppBanner = () => {
 					}}
 					className="font-general-medium mt-4 text-lg md:text-xl lg:text-2xl xl:text-3xl text-center sm:text-left leading-normal text-gray-500 dark:text-gray-200"
 				>
-					I build things that scale
+					I like to build things that scale
 				</motion.p>
-				<motion.p
+				{/* <motion.p
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
 					transition={{
@@ -50,7 +50,7 @@ const AppBanner = () => {
 					className="font-general-medium mt-4 text-md md:text-lg lg:text-xl xl:text-2xl text-center sm:text-left leading-normal text-gray-500 dark:text-gray-200"
 				>
 					CS graduate student at UC Irvine and an enthusiastic Software Developer. I like working on Distributed Systems and Microservices
-				</motion.p>
+				</motion.p> */}
 				<motion.div
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}

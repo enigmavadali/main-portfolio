@@ -8,9 +8,9 @@ const AboutMeBio = () => {
 	return (
 		<div id="aboutme">
 			<div className="mt-10 sm:mt-20 text-center">
-			<p className="font-general-medium text-2xl sm:text-4xl mb-1 text-ternary-dark dark:text-ternary-light">
-				{aboutMeHeading}
-			</p>
+				<p className="font-general-medium text-2xl sm:text-4xl mb-1 text-ternary-dark dark:text-ternary-light">
+					{aboutMeHeading}
+				</p>
 			</div>
 			<div className="block sm:flex sm:gap-10 mt-10 sm:mt-20">
 				<div className="w-full sm:w-1/4 mb-7 sm:mb-0">

@@ -603,6 +603,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .w-64 {
   width: 16rem;
 }
+.w-logo-custom {
+  width: 20rem;
+}
 .w-96 {
   width: 24rem;
 }

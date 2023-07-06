@@ -18,11 +18,13 @@ const SkillsGrid = () => {
             </div>
             <div className='grid grid-cols-4 sm:grid-cols-4 mt-10 sm:mt-10 gap-2 sm:gap-0'>
                 {skillsData.map( (skill) => (
-                    <SkillSingle
-                    title={skill.title}
-                    image={skill.img}
-                    key={skill.id}
-                    />
+                    <div className='w-36 rounded-xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-light'>
+                        <SkillSingle
+                        title={skill.title}
+                        image={skill.img}
+                        key={skill.id}
+                        />
+                    </div>
                 ))}
             </div>
             

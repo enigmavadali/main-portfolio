@@ -7,6 +7,8 @@ import logoLight from '../../images/logo-light.svg';
 import logoDark from '../../images/logo-dark.svg';
 import { motion } from 'framer-motion';
 import Button from '../reusable/Button';
+import logoMeLight from '../../images/logo-me-light.svg';
+import logoMeDark from '../../images/logo-me-dark.svg';
 
 const AppHeader = () => {
 	const [showMenu, setShowMenu] = useState(false);
@@ -58,14 +60,14 @@ const AppHeader = () => {
 						<Link to="/">
 							{activeTheme === 'dark' ? (
 								<img
-									src={logoDark}
-									className="w-36"
+									src={logoMeDark}
+									className="w-64 mt-5"
 									alt="Dark Logo"
 								/>
 							) : (
 								<img
-									src={logoLight}
-									className="w-36"
+									src={logoMeLight}
+									className="w-64 mt-5"
 									alt="Dark Logo"
 								/>
 							)}

@@ -712,6 +712,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .border-left-theme {
   border-left: thick double #6c63ff;
 }
+.border-right-theme {
+  border-right: thick double #6c63ff;
+}
 .border-ternary-light {
   --tw-border-opacity: 1;
   border-color: rgb(246 247 248 / var(--tw-border-opacity));

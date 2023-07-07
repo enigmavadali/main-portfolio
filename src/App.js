@@ -14,6 +14,7 @@ const Projects = lazy(() => import('./pages/Projects'));
 const ProjectSingle = lazy(() => import('./pages/ProjectSingle.jsx'));
 const Skills = lazy(() => import('./pages/Skills'));
 const Education = lazy(() => import('./pages/Education'));
+const Experience = lazy(() => import('./pages/Experience'));
 
 function App() {
 	return (
@@ -27,6 +28,7 @@ function App() {
 						<About />
 						<Skills />
 						<Education />
+						<Experience />
 						<Projects />
 						<Contact />
 						{/* <Routes>

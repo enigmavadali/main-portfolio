@@ -198,7 +198,7 @@ const AppHeader = () => {
 					<div className="hidden md:flex">
 						<a
 							href="https://drive.google.com/file/d/1yrlnzkfV85osiKmMoGG3e7Tvz2CLF4CQ/view?usp=sharing"
-							target="_blank"
+							target="__blank"
 							rel="noopener noreferrer"
 							className="text-md font-general-medium bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-md px-5 py-2.5 duration-300"
 							aria-label="View Resume Button"

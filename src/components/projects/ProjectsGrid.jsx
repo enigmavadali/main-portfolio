@@ -16,14 +16,14 @@ const ProjectsGrid = () => {
 	} = useContext(ProjectsContext);
 
 	return (
-		<section className="py-5 sm:py-10 mt-5 sm:mt-10" id="projects">
+		<div className="py-5 sm:py-10 mt-5 sm:mt-10" id="projects">
 			<div className="text-center">
 				<p className="font-general-medium text-2xl sm:text-4xl mb-1 text-ternary-dark dark:text-ternary-light">
-					Projects portfolio
+					Projects
 				</p>
 			</div>
 
-			<div className="mt-10 sm:mt-16">
+			{/* <div className="mt-10 sm:mt-16">
 				<h3
 					className="font-general-regular 
                         text-center text-secondary-dark
@@ -91,9 +91,9 @@ const ProjectsGrid = () => {
 
 					<ProjectsFilter setSelectProject={setSelectProject} />
 				</div>
-			</div>
+			</div> */}
 
-			<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-6 sm:gap-10">
+			<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-10 sm:mt-16 sm:gap-10">
 				{selectProject
 					? selectProjectsByCategory.map((project) => (
 							<ProjectSingle
@@ -113,15 +113,17 @@ const ProjectsGrid = () => {
 							/>
 					  ))
 					: projects.map((project) => (
+						// this is the default where projects are loaded from when search & select are not used
 							<ProjectSingle
 								title={project.title}
 								category={project.category}
 								image={project.img}
+								url={project.url}
 								key={project.id}
 							/>
 					  ))}
 			</div>
-		</section>
+		</div>
 	);
 };
 

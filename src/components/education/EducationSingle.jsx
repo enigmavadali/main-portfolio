@@ -2,7 +2,7 @@ import img from '../../images/tech/amazon_aws.svg';
 
 const EducationSingle = ({ institute, program, dates }) => {
     return (
-        <div className="w-full rounded-xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark mt-6 sm:mt-6 gap-2 sm:gap-0 border-education">
+        <div className="w-full rounded-xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark mt-6 sm:mt-6 gap-2 sm:gap-0 border-left-theme">
             {/* <div>
                 <img
                     src={img}

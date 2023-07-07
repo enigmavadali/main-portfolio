@@ -709,7 +709,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 .border-none {
   border-style: none;
 }
-.border-education {
+.border-left-theme {
   border-left: thick double #6c63ff;
 }
 .border-ternary-light {

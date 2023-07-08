@@ -3,8 +3,8 @@ import { FiMenu, FiMoon, FiSun, FiX } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import useThemeSwitcher from '../../hooks/useThemeSwitcher';
 import HireMeModal from '../HireMeModal';
-import logoLight from '../../images/logo-light.svg';
-import logoDark from '../../images/logo-dark.svg';
+// import logoLight from '../../images/logo-light.svg';
+// import logoDark from '../../images/logo-dark.svg';
 import { motion } from 'framer-motion';
 import Button from '../reusable/Button';
 import logoMeLight from '../../images/logo-me-light.svg';
@@ -118,13 +118,41 @@ const AppHeader = () => {
 							: 'hidden'
 					}
 				>
-					<Link
-						to="/projects"
+					<a
+						href="#aboutme"
+						className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
+						aria-label="About Me"
+					>
+						About Me
+					</a>
+					<a
+						href="#skills"
+						className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
+						aria-label="Skills"
+					>
+						Skills
+					</a>
+					<a
+						href="#education"
+						className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
+						aria-label="Education"
+					>
+						Education
+					</a>
+					<a
+						href="#experience"
+						className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
+						aria-label="Experience"
+					>
+						Experience
+					</a>
+					<a
+						href="#projects"
 						className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
 						aria-label="Projects"
 					>
 						Projects
-					</Link>
+					</a>
 					{/* <Link
 						to="/about"
 						className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark"
@@ -132,13 +160,13 @@ const AppHeader = () => {
 					>
 						About Me
 					</Link> */}
-					<Link
-						to="/contact"
+					<a
+						href="#contacts"
 						className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark"
 						aria-label="Contact"
 					>
 						Contact
-					</Link>
+					</a>
 					<div className="border-t-2 pt-3 sm:pt-0 sm:border-t-0 border-primary-light dark:border-secondary-dark">
 						<a
 							href="https://drive.google.com/file/d/1yrlnzkfV85osiKmMoGG3e7Tvz2CLF4CQ/view?usp=sharing"
@@ -162,13 +190,38 @@ const AppHeader = () => {
 					>
 						About Me
 					</a>
-					<Link
-						to="/projects"
+					<a
+						href="#skills"
+						className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
+						aria-label="Skills"
+						onClick={smoothScroll}
+					>
+						Skills
+					</a>
+					<a
+						href="#education"
+						className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
+						aria-label="Education"
+						onClick={smoothScroll}
+					>
+						Education
+					</a>
+					<a
+						href="#experience"
+						className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
+						aria-label="Experience"
+						onClick={smoothScroll}
+					>
+						Experience
+					</a>
+					<a
+						href="#projects"
 						className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
 						aria-label="Projects"
+						onClick={smoothScroll}
 					>
 						Projects
-					</Link>
+					</a>
 					{/* <Link
 						to="/about"
 						className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
@@ -176,21 +229,14 @@ const AppHeader = () => {
 					>
 						About Me
 					</Link> */}
-					<Link
-						to="/contact"
-						className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
-						aria-label="Contact"
-					>
-						Contact
-					</Link>
 					<a
-						href="#projects"
+						href="#contacts"
 						className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
 						aria-label="Contact"
 						onClick={smoothScroll}
 					>
-						Test
-					</a>
+						Contact
+					</a>					
 				</div>
 
 				{/* Header right section buttons */}

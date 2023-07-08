@@ -13,7 +13,7 @@ const EducationTimeline = () => {
 					{educationHeading}
 				</p>
 			</div>
-            <div className='float-right mt-10 sm:mt-10 gap-2 sm:gap-0'>
+            <div className='float-right mt-10 sm:mt-20 gap-2 sm:gap-0'>
                 {educationData.map((education) => (
                     <EducationSingle
                         institute={education.institute}
@@ -22,7 +22,7 @@ const EducationTimeline = () => {
                     />
                 ))}
             </div>
-            <div className="text-left float-left mt-12 sm:mt-2">
+            <div className="text-left float-left mt-12 sm:mt-20 mt-10">
                 <img width="400px" src={EducationImage} alt="education-student" />
             </div>
         </div>

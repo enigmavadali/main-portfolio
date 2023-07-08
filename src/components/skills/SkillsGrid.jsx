@@ -13,10 +13,10 @@ const SkillsGrid = () => {
                     {skillsHeading}
                 </p>
             </div>
-            <div className="text-right float-right mt-8 sm:mt-2">
+            <div className="text-right float-right mt-10 sm:mt-20 sm:gap-10">
                 <img width="350px" src={SkillProgrammer} alt="skill-programmer" />
             </div>
-            <div className='grid grid-cols-4 sm:grid-cols-4 mt-10 sm:mt-10 gap-2 sm:gap-0'>
+            <div className='grid grid-cols-4 sm:grid-cols-4 mt-10 sm:mt-20 gap-2 sm:gap-0'>
                 {skillsData.map( (skill) => (
                     <div className='w-36 rounded-xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-light'>
                         <SkillSingle

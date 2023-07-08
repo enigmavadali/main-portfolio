@@ -1,8 +1,8 @@
 import { useState, createContext } from 'react';
 import { aboutMeData } from '../data/aboutMeData';
 import { aboutMeHeading as aboutMeSectionHeading } from '../data/aboutMeData';
-import { clientsHeading as clientsPageHeading } from '../data/clientsData';
-import { clientsData as clientsDataJson } from '../data/clientsData';
+// import { clientsHeading as clientsPageHeading } from '../data/clientsData';
+// import { clientsData as clientsDataJson } from '../data/clientsData';
 
 const AboutMeContext = createContext();
 
@@ -11,9 +11,9 @@ export const AboutMeProvider = ({ children }) => {
 
 	const aboutMeHeading = aboutMeSectionHeading;
 
-	const clientsHeading = clientsPageHeading;
+	// const clientsHeading = clientsPageHeading;
 
-	const [clientsData, setClientsData] = useState(clientsDataJson);
+	// const [clientsData, setClientsData] = useState(clientsDataJson);
 
 	return (
 		<AboutMeContext.Provider
@@ -21,9 +21,9 @@ export const AboutMeProvider = ({ children }) => {
 				aboutMe,
 				setAboutMe,
 				aboutMeHeading,
-				clientsHeading,
-				clientsData,
-				setClientsData,
+				// clientsHeading,
+				// clientsData,
+				// setClientsData,
 			}}
 		>
 			{children}

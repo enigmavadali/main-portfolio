@@ -1,17 +1,17 @@
 import { useContext } from 'react';
-import { FiSearch } from 'react-icons/fi';
+// import { FiSearch } from 'react-icons/fi';
 import ProjectSingle from './ProjectSingle';
 import { ProjectsContext } from '../../context/ProjectsContext';
-import ProjectsFilter from './ProjectsFilter';
+// import ProjectsFilter from './ProjectsFilter';
 
 const ProjectsGrid = () => {
 	const {
 		projects,
 		searchProject,
-		setSearchProject,
+		// setSearchProject,
 		searchProjectsByTitle,
 		selectProject,
-		setSelectProject,
+		// setSelectProject,
 		selectProjectsByCategory,
 	} = useContext(ProjectsContext);
 

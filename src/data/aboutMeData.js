@@ -3,7 +3,7 @@ export const aboutMeHeading = "Well, where do we start...";
 export const aboutMeData = [
 	{
 		id: 1,
-		bio: 'I\'m a graduate student pursuing my Masters in Computer Science at University of California, Irvine. A passionate software developer keen on learning & working on Distributed Systems and Microservices.',
+		bio: 'I\'m a professional software engineer with a Masters degree in Computer Science from the University of California, Irvine. My forte lies in working on Distributed Systems and Microservices at scale.',
 	},
 	{
 		id: 2,

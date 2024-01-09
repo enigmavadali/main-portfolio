@@ -2,13 +2,23 @@ export const experienceHeading = 'Work Experience';
 
 export const experienceData = [
     {
-        company: "TIAA India",
-        position: "Analyst, Software Developer",
-        duration: "(July 2020 - June 2022)"
+        company: "University of California - Irvine",
+        position: "Graduate Student Researcher",
+        duration: "(July 2023 - December 2023)"
     },
     {
-        company: "TIAA India",
-        position: "Trainee, Software Developer",
-        duration: "(July 2019 - June 2020)"
+        company: "University of California - Irvine",
+        position: "Graduate Student Tutor",
+        duration: "(April 2023 - June 2023)"
+    },
+    {
+        company: "TIAA",
+        position: "Senior Software Engineer",
+        duration: "(July 2021 - June 2022)"
+    },
+    {
+        company: "TIAA",
+        position: "Software Engineer",
+        duration: "(July 2019 - June 2021)"
     }
 ];

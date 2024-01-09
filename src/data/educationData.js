@@ -3,7 +3,7 @@ export const educationHeading = 'Education';
 export const educationData = [
     {
         institute: "University of California - Irvine",
-        program: "Masters of Computer Science",
+        program: "Master of Computer Science",
         dates: "(September 2022 - December 2023)"
     },
     {
